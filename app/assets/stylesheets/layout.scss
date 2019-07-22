@@ -1,11 +1,17 @@
 body {
     margin: 0;
-    font-family: 'Tangerine', cursive;
+    // font-family: 'Tangerine', cursive;
     background: $ivory;
+    text-align: center;
 
     a {
         cursor: pointer;
         text-decoration: none;
+        color: $napkin-purple;
+
+        &:hover {
+            color: $translucent-purple;
+        }
     }
 
     h1 {
