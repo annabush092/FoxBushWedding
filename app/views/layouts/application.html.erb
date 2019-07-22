@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" href="/images/cake-icon.jpg">
+    <link rel="shortcut icon" href="/images/cat-icon.png">
     <title>Fox Bush Wedding</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
     <script type="text/javascript" src="/javascripts/my-test.js"></script>
 
   </head>
 
   <body>
+    <%= render partial: "layouts/header"%>
     <%= yield %>
   </body>
 </html>

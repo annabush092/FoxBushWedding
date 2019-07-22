@@ -1,0 +1,38 @@
+#header-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+
+    background: $napkin-purple;
+    
+    a {
+        color: $white;
+    }
+
+    #logo {
+        font-size: 28px;
+        line-height: 32px;
+        padding-left: 16px;
+        padding-top: 24px;
+    }
+
+    #navbar {
+        float: right;
+        padding-top: 32px;
+        padding-right: 20px;
+
+        table {
+            border-spacing: 0;
+
+            td {
+                padding-left: 12px;
+                padding-right: 12px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }        
+}

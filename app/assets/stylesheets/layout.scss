@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Tangerine', cursive;
+    background: $ivory;
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 48px;
+        color: $patio-gray;
+    }
+
+    .inline-div {
+        display: inline-block;
+    }
+}

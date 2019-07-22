@@ -1,3 +1,33 @@
 #home-container {
-    color: blue;
+    text-align: center;
+
+    #cosmo-hi {
+        width: 300px;
+        max-width: 80vw;
+    }
+
+    #beach {
+        width: 800px;
+        max-width: 80vw;
+    }
+
+    table#lucerne {
+        
+        max-width: 80vw;
+        margin: auto;
+
+        td {
+            vertical-align: top;
+            padding-bottom: 8px;
+            padding-right: 8px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        td.narrow-td {
+            width: 37%;
+        }
+    }
 }
