@@ -17,6 +17,12 @@
         line-height: 32px;
         padding-left: 16px;
         padding-top: 24px;
+
+        &:hover {
+            a {
+                color: $light-gray;
+            }
+        }
     }
 
     #navbar {
