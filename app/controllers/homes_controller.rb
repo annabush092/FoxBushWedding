@@ -4,4 +4,10 @@ class HomesController < ApplicationController
 
     def location
     end
+
+    def schedule
+    end
+
+    def activities
+    end
 end

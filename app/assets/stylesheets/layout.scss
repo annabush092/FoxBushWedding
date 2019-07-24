@@ -2,12 +2,12 @@ body {
     margin: 0;
     background: $ivory;
     font-family: 'Belleza', sans-serif;
+    color: $patio-gray;
 
     a {
         cursor: pointer;
         text-decoration: none;
         color: $napkin-purple;
-        font-family: 'Clicker Script', cursive;
 
         &:hover {
             color: $translucent-purple;
@@ -20,6 +20,11 @@ body {
         line-height: 48px;
         color: $patio-gray;
         font-family: 'Clicker Script', cursive;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .inline-div {
