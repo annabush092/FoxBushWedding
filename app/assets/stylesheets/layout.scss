@@ -22,13 +22,15 @@ body {
         font-family: 'Clicker Script', cursive;
     }
 
-    p {
-        font-size: 20px;
-        line-height: 28px;
-
+    h2, p {
         a {
             text-decoration: underline;
         }
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .inline-div {

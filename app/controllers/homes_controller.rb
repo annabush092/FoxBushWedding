@@ -10,4 +10,7 @@ class HomesController < ApplicationController
 
     def activities
     end
+
+    def aboutLocation
+    end
 end

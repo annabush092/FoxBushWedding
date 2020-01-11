@@ -6,13 +6,12 @@
         max-width: 80vw;
     }
 
-    #beach,
     #calendar {
         width: 800px;
         max-width: 80vw;
     }
 
-    table.lucerne {
+    table {
         
         max-width: 80vw;
         margin: auto;
@@ -31,13 +30,13 @@
         }
     }
 
-    table#lucerne-1 {
+    table.align-bottom {
         td {
             vertical-align: bottom;
         }
     }
 
-    table#lucerne-2 {
+    table.align-top {
         td {
             vertical-align: top;
         }

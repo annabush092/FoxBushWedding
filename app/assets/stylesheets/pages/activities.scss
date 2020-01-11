@@ -1,6 +1,38 @@
 #activities-container {
     text-align: center;
 
+    #sunset-img-background {
+        width: 100vw;
+        height: 500px;
+
+        background-image: url("/images/lake-sunset.jpg");
+        background-size: cover;
+        background-position-y: center;
+
+        table {
+            height: 100%;
+            width: 100%;
+            padding: 16px;
+            
+            tr {
+                height: 100%;
+
+                td {
+                    font-size: 20px;
+                    vertical-align: top;
+                    color: $black;
+                }
+
+                td.align-bottom {
+                    color: $white;
+                    vertical-align: bottom;
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
     #large-map {
         width: 800px;
         max-width: 80vw;
