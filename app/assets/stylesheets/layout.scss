@@ -1,11 +1,17 @@
 body {
     margin: 0;
-    font-family: 'Tangerine', cursive;
     background: $ivory;
+    font-family: 'Belleza', sans-serif;
+    color: $patio-gray;
 
     a {
         cursor: pointer;
         text-decoration: none;
+        color: $napkin-purple;
+
+        &:hover {
+            color: $translucent-purple;
+        }
     }
 
     h1 {
@@ -13,6 +19,12 @@ body {
         font-weight: bold;
         line-height: 48px;
         color: $patio-gray;
+        font-family: 'Clicker Script', cursive;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .inline-div {
