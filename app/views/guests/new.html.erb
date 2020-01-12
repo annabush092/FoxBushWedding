@@ -1,0 +1,15 @@
+<div id="guests-new-container">
+    <h2>RSVP</h2>
+
+    <%= form_for @guest do |f| %>
+
+    <%= f.label :name %>
+        <%= f.text_field :name %>
+
+    <%= f.label :attending %>
+        <%= f.check_box :attending %>
+
+    <%= f.submit %>
+
+    <% end %>
+</div>

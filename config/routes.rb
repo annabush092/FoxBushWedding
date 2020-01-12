@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/schedule', to: 'homes#schedule'
   get '/activities', to: 'homes#activities'
   get '/about-location', to: 'homes#aboutLocation'
+
+  resources :guests, only: [:index, :new, :create, :show, :destroy]
 end

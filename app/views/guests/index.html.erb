@@ -1,0 +1,29 @@
+<div id="guests-index-container">
+
+    <h2>All RSVPs</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Attending?</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @guests.each do |g|%>
+                <tr>
+                    <td><%= g.name %></td>
+                    <td><%= g.attending ? "Y" : "N" %></td>
+                    <td>
+                        <%= form_tag guest_path(g), method: "delete" do %>
+                            <%= submit_tag "Delete" %>
+                        <% end %>
+                    </td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+</div>
