@@ -6,7 +6,7 @@
     height: 80px;
     z-index: 100;
 
-    background: $napkin-purple;
+    background: $darker-purple;
     
     a {
         color: $white;
@@ -21,7 +21,7 @@
 
         &:hover {
             a {
-                color: $light-gray;
+                color: $white-purple;
             }
         }
     }
@@ -42,7 +42,7 @@
 
                 &:hover {
                     a {
-                        color: $light-gray;
+                        color: $white-purple;
                     }
                 }
             }

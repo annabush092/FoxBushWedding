@@ -2,15 +2,15 @@ body {
     margin: 0;
     background: $ivory;
     font-family: 'Belleza', sans-serif;
-    color: $patio-gray;
+    color: $dark-blue;
 
     a {
         cursor: pointer;
         text-decoration: none;
-        color: $napkin-purple;
+        color: $green;
 
         &:hover {
-            color: $translucent-purple;
+            color: $translucent-green;
         }
     }
 
@@ -18,8 +18,8 @@ body {
         font-size: 48px;
         font-weight: bold;
         line-height: 48px;
-        color: $patio-gray;
         font-family: 'Clicker Script', cursive;
+        color: $blue;
     }
 
     h2, p {
