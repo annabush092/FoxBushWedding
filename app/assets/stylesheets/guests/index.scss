@@ -1,3 +1,55 @@
 #guests-index-container {
-    
+    text-align: center;
+
+    table {
+        border-spacing: 0;
+        margin: auto;
+        background-color: $white;
+        box-shadow: 2px 2px 5px $blue-black;
+
+        tr {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            font-size: 18px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            background-color: $darker-blue;
+            color: $white;
+        }
+
+        td {
+            border-top: 1px solid $dark-blue;
+        }
+
+        #name-header, .name-td {
+            text-align: left;
+            padding-left: 16px;
+        }
+
+        #name-header {
+            min-width: 140px;
+        }
+    }
+
+    .totals-chart {
+        display: inline-block;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 32px;
+        margin-right: 32px;
+        vertical-align: top;
+
+        th, td {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
 }

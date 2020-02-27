@@ -5,8 +5,10 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Attending?</th>
+                <th id="name-header">Name</th>
+                <th>Ceremony/Reception</th>
+                <th>Dinner Choice</th>
+                <th>Brunch</th>
                 <th></th>
             </tr>
         </thead>
@@ -14,13 +16,51 @@
         <tbody>
             <% @guests.each do |g|%>
                 <tr>
-                    <td><%= g.name %></td>
+                    <td class="name-td"><%= g.name %></td>
                     <td><%= g.attending ? "Y" : "N" %></td>
+                    <td><%= g.meal %></td>
+                    <td><%= g.brunch ? "Y" : "N" %></td>
                     <td>
                         <%= form_tag guest_path(g), method: "delete" do %>
                             <%= submit_tag "Delete" %>
                         <% end %>
                     </td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+    <table class="totals-chart">
+        <thead>
+            <tr>
+                <th class="name-td">Meal Selection</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @meals.each do |key, value|%>
+                <tr>
+                    <td class="name-td"><%= key %></td>
+                    <td><%= value %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+    <table class="totals-chart">
+        <thead>
+            <tr>
+                <th class="name-td">Event</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @totals.each do |key, value|%>
+                <tr>
+                    <td class="name-td"><%= key %></td>
+                    <td><%= value %></td>
                 </tr>
             <% end %>
         </tbody>

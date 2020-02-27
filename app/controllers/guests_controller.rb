@@ -2,6 +2,35 @@ class GuestsController < ApplicationController
 
     def index 
         @guests = Guest.all
+
+        @meals = {
+          "meat" => 0,
+          "veggie" => 0,
+          "lobster" => 0
+        }
+
+        @totals = {
+          "reception" => 0,
+          "brunch" => 0
+        }
+
+        @guests.each { |guest|
+          if guest.meal == "meat"
+            @meals["meat"] = @meals["meat"] + 1
+          elsif guest.meal == "veggie"
+            @meals["veggie"] = @meals["veggie"] + 1
+          elsif guest.meal == "lobster"
+            @meals["lobster"] = @meals["lobster"] + 1
+          end
+
+          if guest.attending 
+            @totals["reception"] = @totals["reception"] + 1
+          end
+
+          if guest.brunch 
+            @totals["brunch"] = @totals["brunch"] + 1 
+          end
+        }
     end
 
     def show 
@@ -30,7 +59,7 @@ class GuestsController < ApplicationController
     private
 
     def guest_params
-      params.require(:guest).permit(:name, :attending)
+      params.require(:guest).permit(:name, :attending, :meal, :brunch)
     end
   
   

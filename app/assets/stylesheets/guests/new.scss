@@ -1,41 +1,102 @@
 #guests-new-container {
     text-align: center;
 
-    form {
-        max-width: 80vw;
-        width: 200px;
+    #rsvp-card {
+        background-color: $white;
+        box-shadow: 2px 2px 5px $blue-black;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-bottom: 48px;
         margin: auto;
+        display: inline-block;
+        margin-top: 32px;
+        margin-bottom: 32px;
 
-        label {
-            display: block;
-            font-size: 20px;
-            margin-top: 24px;
-            margin-bottom: 8px;
+        max-width: 80vw;
+        width: 600px;
+
+        form {
+            margin: auto;    
+
+            .divider-line {
+                height: 1px;
+                background-color: $white-blue;
+                margin-top: 40px;
+            }
+
+            #name-hint {
+                margin-top: 0;
+                margin-bottom: 8px;
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            input[type=text] {
+                width: 80%;
+                margin: auto;
+            }
+
+            table {
+                margin: auto;
+                table-layout: fixed;
+
+                td {
+                    vertical-align: middle;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+
+                    .checkmark {
+                        opacity: 0%;
+                        padding-right: 8px;
+                    }
+
+                    &.selected {
+                        background-color: $white-green;
+
+                        .checkmark {
+                            opacity: 100%;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $translucent-white-green !important;
+                    }
+
+                    label, input[type=radio] {
+                        display: inline-block;
+                        width: auto;
+                        margin: 0;
+                        vertical-align: middle;
+                    }
+
+                    label {
+                        font-size: 16px;
+                    }
+
+                    input[type=radio] {
+                        display: none;
+                    }
+                }
+            }
+
+            select {
+                max-width: 200px;
+                margin: auto;
+            }
+
+            #meal-description {
+                font-size: 16px;
+                margin-top: 8px;
+            }
+
+            input[type=submit] {
+                max-width: 200px;
+                margin: auto;
+                margin-top: 24px;
+            }
         }
 
-        input, select {
-            display: block;
-            width: 100%;
-
-            font-size: 16px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-
-        input[type=submit] {
-            margin-top: 24px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 8px;
-            padding-right: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 24px;
-
-            background-color: $blue;
-            color: $white;
-        }
     }
 }

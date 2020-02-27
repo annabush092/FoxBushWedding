@@ -78,8 +78,16 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+
+# production:
+#   <<: *default
+#   database: FoxBushWedding_production
+#   username: anna
+#   password: dolphin91
+
 production:
   <<: *default
   database: FoxBushWedding_production
-  username: anna
-  password: dolphin91
+  username: annabush
+  password: thinkeco

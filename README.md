@@ -1,24 +1,17 @@
-# README
+Url:
+https://annabush-ethanfox.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Update packages: 
+bundle update
 
-Things you may want to cover:
+Run locally:
+rails s
 
-* Ruby version
+Publish: 
+git push heroku master
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To initialize db locally:
+1) Check config/database.yml file, Production credentials, and change to current computer credentials. Important! Comment out existing credentials, which are required for publishing to Heroku.
+2) Start Postgres server
+3) rake db:create
+4) rake db:migrate
