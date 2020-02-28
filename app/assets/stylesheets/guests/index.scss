@@ -37,6 +37,15 @@
         #name-header {
             min-width: 140px;
         }
+
+        .right-align {
+            text-align: right;
+        }
+
+        input[type=submit] {
+            background-color: $dark-brown;
+            border-color: $dark-brown;
+        }
     }
 
     .totals-chart {

@@ -32,11 +32,13 @@
 
         <div class="divider-line"></div>
 
-        <%= f.label :meal, "Dinner Choice" %>
-        <%= f.select :meal, [['Meat', 'meat'], ['Veggie', 'veggie'], ['Lobster', 'lobster']] %>
-        <p id="meal-description"></p>
+        <div id="meal-container">
+            <%= f.label :meal, "Dinner Choice" %>
+            <%= f.select :meal, [['Meat', 'meat'], ['Veggie', 'veggie'], ['Lobster', 'lobster']] %>
+            <p id="meal-description"></p>
 
-        <div class="divider-line"></div>
+            <div class="divider-line"></div>
+        </div>
 
         <label>Sunday Brunch</label>
         <table>
@@ -54,8 +56,6 @@
                 </td>
             </tr>
         </table>
-
-        <div class="divider-line"></div>
 
         <%= f.submit "Send" %>
 

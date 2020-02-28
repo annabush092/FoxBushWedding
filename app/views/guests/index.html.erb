@@ -34,7 +34,7 @@
         <thead>
             <tr>
                 <th class="name-td">Meal Selection</th>
-                <th>Total</th>
+                <th class="right-align">Total</th>
             </tr>
         </thead>
 
@@ -42,7 +42,7 @@
             <% @meals.each do |key, value|%>
                 <tr>
                     <td class="name-td"><%= key %></td>
-                    <td><%= value %></td>
+                    <td class="right-align"><%= value %></td>
                 </tr>
             <% end %>
         </tbody>
@@ -52,7 +52,7 @@
         <thead>
             <tr>
                 <th class="name-td">Event</th>
-                <th>Total</th>
+                <th class="right-align">Total</th>
             </tr>
         </thead>
 
@@ -60,7 +60,7 @@
             <% @totals.each do |key, value|%>
                 <tr>
                     <td class="name-td"><%= key %></td>
-                    <td><%= value %></td>
+                    <td class="right-align"><%= value %></td>
                 </tr>
             <% end %>
         </tbody>

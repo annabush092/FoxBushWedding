@@ -43,6 +43,11 @@ class GuestsController < ApplicationController
   
     def create
       @guest = Guest.new(guest_params)
+
+      if !@guest.attending 
+        @guest.meal = ""
+      end
+
       if @guest.save
         redirect_to guest_path(@guest)
       else
