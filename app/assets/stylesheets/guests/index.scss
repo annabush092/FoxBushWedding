@@ -1,11 +1,12 @@
 #guests-index-container {
     text-align: center;
 
+    #guest-table {
+        display: table;
+    }
+
     table {
         border-spacing: 0;
-        margin: auto;
-        background-color: $white;
-        box-shadow: 2px 2px 5px $blue-black;
 
         tr {
             padding-left: 16px;
@@ -34,10 +35,6 @@
             padding-left: 16px;
         }
 
-        #name-header {
-            min-width: 140px;
-        }
-
         .right-align {
             text-align: right;
         }
@@ -49,10 +46,7 @@
     }
 
     .totals-chart {
-        display: inline-block;
         margin-left: 0;
-        margin-bottom: 0;
-        margin-top: 32px;
         margin-right: 32px;
         vertical-align: top;
 

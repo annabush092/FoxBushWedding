@@ -2,13 +2,14 @@
 
     <h2>All RSVPs</h2>
 
-    <table>
+    <table id="guest-table" class="card">
         <thead>
             <tr>
                 <th id="name-header">Name</th>
                 <th>Ceremony/Reception</th>
                 <th>Dinner Choice</th>
                 <th>Brunch</th>
+                <th>Guest Notes</th>
                 <th></th>
             </tr>
         </thead>
@@ -20,6 +21,7 @@
                     <td><%= g.attending ? "Y" : "N" %></td>
                     <td><%= g.meal %></td>
                     <td><%= g.brunch ? "Y" : "N" %></td>
+                    <td><%= g.notes %></td>
                     <td>
                         <%= form_tag guest_path(g), method: "delete" do %>
                             <%= submit_tag "Delete" %>
@@ -30,7 +32,7 @@
         </tbody>
     </table>
 
-    <table class="totals-chart">
+    <table class="card totals-chart">
         <thead>
             <tr>
                 <th class="name-td">Meal Selection</th>
@@ -48,7 +50,7 @@
         </tbody>
     </table>
 
-    <table class="totals-chart">
+    <table class="card totals-chart">
         <thead>
             <tr>
                 <th class="name-td">Event</th>

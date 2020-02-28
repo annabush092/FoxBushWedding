@@ -1,0 +1,17 @@
+.card {
+    background-color: $white;
+    box-shadow: 2px 2px 5px $blue-black;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    margin: auto;
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    max-width: 80vw;
+}
+
+table.card {
+    padding: 0;
+}
