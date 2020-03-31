@@ -13,4 +13,7 @@ class HomesController < ApplicationController
 
     def aboutLocation
     end
+
+    def registry
+    end
 end
