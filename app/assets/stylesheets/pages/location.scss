@@ -6,23 +6,44 @@
     }
 
     #map-container {
-        background-color: $darkest-green;
-        text-align: left;
-        white-space: nowrap;
-
-        #map {
-            max-width: 100vw;
-            max-height: 70vh;
-            vertical-align: middle;
-        }
-
-        p {
-            display: inline-block;
-            color: $white;
-            vertical-align: middle;
-            
-        }
+        overflow: hidden;
     }
+    #map {
+        max-height: 70vh;
+        vertical-align: middle;
+        
+        @media(max-height: 840px) {
+            @media(min-width: 1100px) and (max-width: 1200px) {
+                margin-left: -100px;
+            }
+    
+            @media(min-width: 1000px) and (max-width: 1100px) {
+                margin-left: -200px;
+            }
+    
+            @media (max-width: 1000px) {
+                margin-left: -300px;
+            }
+        }
 
+        @media(min-height: 840px) {
+            @media(min-width: 1200px) and (max-width: 1280px) {
+                margin-left: -80px;
+            }
+    
+            @media(min-width: 1100px) and (max-width: 1200px) {
+                margin-left: -200px;
+            }
+    
+            @media(min-width: 1000px) and (max-width: 1100px) {
+                margin-left: -300px;
+            }
+    
+            @media (max-width: 1000px) {
+                margin-left: -400px;
+            }
+        }
+        
+    }
     
 }

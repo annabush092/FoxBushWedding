@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // Meal selection description
 
-    populateMealDescription("meat");
+    populateMealDescription("chicken");
 
     $("#guest_meal").change(function() {
         let value = $(this).val();
@@ -11,16 +11,24 @@ $(document).ready(function() {
 
     function populateMealDescription(selection) {
         switch(selection) {
-            case "meat": 
-                $("#meal-description").text("Description of delicious meat. Yum.");
+            case "chicken": 
+                $("#meal-description").text("Chicken Marsala: Tender chicken breast, pan seared with Marsala cream sauce.");
                 break;
 
-            case "veggie":
-                $("#meal-description").text("Description of delicious veggies. Yum?");
+            case "salmon":
+                $("#meal-description").text("Caramelized Salmon Filet: Fresh salmon filet rubbed with seasoned ginger, sugar, and spices, then pan seared until caramelized. Drizzled with a maple butter.");
                 break;
 
             case "lobster":
-                $("#meal-description").text("Description of delicious lobster. Yum!");
+                $("#meal-description").text("Lucerne Inn Delight (Filet and Lobster): A juicy filet of beef topped with a fresh grilled lobster tail, finished with compound tarragon butter.");
+                break;
+
+            case "veggie":
+                $("#meal-description").text("Eggplant Parmesan: Served with the Lucerne's own maranara and topped with Provolone and Parmesan cheeses. Served with fettuccini.");
+                break;
+
+            default:
+                $("#meal-description").text("Please select a menu option.");
                 break;
         }
     }
