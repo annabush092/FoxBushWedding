@@ -9,6 +9,8 @@ rails s
 
 Publish: 
 git push heroku master
+If remote is missing for some reason: 
+heroku git:remote -a annabush-ethanfox
 
 Update server db:
 heroku run rake db:migrate
