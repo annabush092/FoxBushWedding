@@ -40,6 +40,25 @@
             <div class="divider-line"></div>
         </div>
 
+        <label>Sunday Brunch</label>	
+        <table>	
+            <tr>	
+                <td class="radio-td selected">	
+                    <%= f.radio_button :brunch, true, :checked => true, :value => true, class: 'radio'  %>	
+                    <label class="checkmark">✓</label>	
+                    <%= f.label :brunch, "Will attend", value: true %>	
+                </td>	
+
+                <td class="radio-td">	
+                    <%= f.radio_button :brunch, false, :value => false, class: 'radio' %>	
+                    <label class="checkmark">✓</label>	
+                    <%= f.label :brunch, "Unable to Attend", value: false %>	
+                </td>	
+            </tr>	
+        </table>	
+
+        <div class="divider-line"></div>
+
         <%= f.label :notes, "Notes for the Hosts" %>
         <p class="label-note">Food requirements? Comments? Leave it all here!</p>
         <%= f.text_field :notes %>
