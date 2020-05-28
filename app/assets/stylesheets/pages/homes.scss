@@ -6,6 +6,11 @@
         max-width: 80vw;
     }
 
+    #covid-pic {
+        width: 400px;
+        max-width: 80vw;
+    }
+
     #calendar {
         width: 800px;
         max-width: 80vw;
@@ -41,5 +46,12 @@
         td {
             vertical-align: top;
         }
+    }
+
+    #important-notice {
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 32px;
+        padding-bottom: 80px;
     }
 }
